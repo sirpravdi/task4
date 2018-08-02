@@ -130,6 +130,10 @@ body
 {
     margin-top: 10px;
     margin-bottom: 4px;
+    text-indent: 2ch;
+    text-align: justify;
+    font-style: italic;
+    font-size: 80%;
 }
 
 .article__author
@@ -139,6 +143,7 @@ body
     font-weight: bold;
     font-size: 80%;
     text-align: center;
+    column-span: all;
 }
 
 .article__continue
@@ -152,6 +157,12 @@ body
 .article__content{
     font-size: 80%;
     text-align: justify;
+    text-indent: 2ch;
+}
+
+.article__content_column{
+    column-count: 2;
+    column-gap: 15px;
 }
 
 .article__image
@@ -192,6 +203,15 @@ body
     column-count: 2;
 }
 
+.article__image-caption{
+    font-size: 0.8rem;
+    text-decoration: underline;
+}
+
+.article__continue_columns{
+    column-span: all;
+}
+
 /*––––––––––––––––––Блок главной фотографии–––––––––*/
 .main-photo__wrapper
 {
@@ -206,6 +226,8 @@ body
 .main-photo__title
 {
     margin: 0;
+    font-weight: bold;
+    font-size: 120%;
 }
 
 .main-photo__desc
